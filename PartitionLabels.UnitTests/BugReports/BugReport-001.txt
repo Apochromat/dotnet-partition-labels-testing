@@ -13,4 +13,4 @@ Priority: Medium
 Фактический результат:
     1-2 - OK, 
     3 - NOK: возвращается ошибка System.IndexOutOfRangeException: Index was outside the bounds of the array.
-Ожидаемый результат: получение корректного результата
+Ожидаемый результат: возвращение ArgumentException с описанием проблемы

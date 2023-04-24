@@ -19,6 +19,7 @@
 //
 // Default constraints:
 // 1 <= s.length <= 500
+// s consists of lowercase English letters
 
 /// <summary>
 /// Solution class
@@ -31,6 +32,7 @@ public static class PartitionLabels {
     /// <returns></returns>
     public static IList<int> Solution(string s) {
         if (s.Length < 1 || s.Length > 500) throw new ArgumentOutOfRangeException(nameof(s));
+        if (s.Any(ch => ch < 'a' || ch > 'z')) throw new ArgumentException("String must consist of lowercase English letters", nameof(s));
         
         var lastfind = new Dictionary<char, int>();
         for (var ch = 0; ch < s.Length; ch++) {
