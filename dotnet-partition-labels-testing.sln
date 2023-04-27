@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionLabels.WebAPI", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionLabels.APITests", "PartitionLabels.APITests\PartitionLabels.APITests.csproj", "{482E9892-C2FA-4D1F-98DB-50C174A4D3B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionLabels.WebUI", "PartitionLabels.WebUI\PartitionLabels.WebUI.csproj", "{B4B80A06-E63C-469C-9A4E-19714C701B98}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{482E9892-C2FA-4D1F-98DB-50C174A4D3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{482E9892-C2FA-4D1F-98DB-50C174A4D3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{482E9892-C2FA-4D1F-98DB-50C174A4D3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4B80A06-E63C-469C-9A4E-19714C701B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4B80A06-E63C-469C-9A4E-19714C701B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4B80A06-E63C-469C-9A4E-19714C701B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4B80A06-E63C-469C-9A4E-19714C701B98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
