@@ -7,12 +7,17 @@
     <form class="card" asp-controller="Home" asp-action="Index" method="Get">
         <div class="card-body d-flex">
             <div class="col">
-                @Html.TextBoxFor(m=> m.input, new { @type = "text", @class = "form-control mb-1"})
+                @Html.TextBoxFor(m=> m.input, new { @type = "text", @id = "Input", @class = "form-control mb-1"})
             </div>
             <div class="">
-                <button type="submit" class="btn btn-primary ms-1 px-5">Submit</button>
+                <button type="submit" id="Submit" class="btn btn-primary ms-1 px-5">Submit</button>
             </div>
         </div>
     </form>
-    @Html.TextBox("Result", Model.result, new { @type = "text", @class = "form-control mb-1", @readonly="readonly"})
+    @if (Model.result != String.Empty) {
+        @Html.TextBox("Result", Model.result, new { @type = "text", @class = "form-control mb-1", @readonly="readonly"})
+    }
+    else {
+        @Html.TextBox("Result", Model.result, new { @type = "text", @class = "form-control mb-1 d-none", @readonly="readonly"})
+    }
 </div>
